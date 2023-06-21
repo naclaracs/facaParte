@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9c0303;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+.form-image img {
+    width: 31rem;
+}
+
+.form {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #9c0303;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #9c0303;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+
+.form-header h1 {
+    height: 0.5rem;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #9c0303;
+    margin: 0 auto;
+    position: absolute;
+} 
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin-left: 5%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.0rem;
+}
+
+.input-box input {
+    margin: 0;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+    margin-top: 0.4rem;
+}
+
+.input-box input:hover {
+    background-color: rgb(235, 233, 233);
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #9c0303;
+}
+
+.input-box label,
+.gender-title h4 {
+    font-size: rem;
+    font-weight: 600;
+    color: black;
+    margin-left: 8%;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+    margin-left: 5%;
+
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: black;
+}
+
+.continue-button button {
+    width:85%;
+    height: 35px;
+    margin-top: 1.8rem;
+    border: none;
+    background-color: #9c0303;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8%;
+}   
+
+.continue-button button:hover {
+    background-color: #9c0303;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image{
+       display: none; 
+    }
+    .container {
+        width: 50%;   
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+}
+
+.back-button button {
+    border: none;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.back-button button:hover {
+    background-color: white;
+}
+
+.back-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #9c0303;
+}
